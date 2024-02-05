@@ -1,0 +1,25 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "65UBA6386T.com.swarcoeconnect.swarcoeconnectapp"
+        ],
+        "components": [
+          {
+            "/": "/register/*",
+            "comment": "Matches any URL whose path starts with /register"
+          },
+          {
+            "/": "/site/*",
+            "comment": "Matches any URL whose path starts with /site/"
+          },
+          {
+            "/": "/payment/*",
+            "comment": "Matches any URL whose path starts with /payment/"
+          }
+        ]
+      }
+    ]
+  }
+}

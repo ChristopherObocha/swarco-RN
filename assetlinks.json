@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.swarcoeconnect.swarcoeconnectapp",
+      "sha256_cert_fingerprints": [
+        "9A:37:24:EF:52:A6:A0:2C:A5:CB:31:5B:12:E7:A0:3E:85:38:4B:35:33:6B:7B:88:7C:98:B6:43:77:E5:AB:13"
+      ]
+    }
+  }
+]

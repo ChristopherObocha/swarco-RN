@@ -1,0 +1,15 @@
+<svg data-name="Connecter type icon circle - small" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <g data-name="Group 17260">
+        <circle data-name="Ellipse 466" cx="15" cy="15" r="15" style="fill:#e5eef7"/>
+    </g>
+    <g data-name="Group 18409" transform="translate(6.307 6.307)">
+        <circle data-name="Ellipse 492" cx="8.092" cy="8.092" transform="translate(.601 .601)" style="stroke-miterlimit:10;stroke-width:1.3px;stroke:#005bac;fill:none" r="8.092"/>
+        <g data-name="Group 17565">
+            <path data-name="Path 11634" d="M4.387 6.168a1.618 1.618 0 1 1-1.618 1.618 1.619 1.619 0 0 1 1.618-1.618" transform="translate(.432 .963)" style="fill:#005bac;fill-rule:evenodd"/>
+            <path data-name="Path 11635" d="M11.089 6.168a1.618 1.618 0 1 1-1.62 1.618 1.619 1.619 0 0 1 1.62-1.618" transform="translate(1.478 .963)" style="fill:#005bac;fill-rule:evenodd"/>
+            <path data-name="Path 11636" d="m7.772 11.224 1.156-1.156.347.347-1.156 1.156 1.156 1.156-.347.347-1.156-1.156-1.156 1.156-.347-.347 1.156-1.156-1.155-1.156.347-.347z" transform="translate(.979 1.571)" style="stroke-width:.3px;fill:#005bac;fill-rule:evenodd;stroke:#005bac"/>
+            <path data-name="Path 11637" d="m7.772 3.64 1.156-1.272.347.347-1.156 1.272 1.156 1.156-.347.347-1.156-1.156L6.616 5.49l-.346-.347 1.156-1.156L6.27 2.715l.347-.347z" transform="translate(.979 .37)" style="stroke-width:.3px;fill:#005bac;fill-rule:evenodd;stroke:#005bac"/>
+        </g>
+        <path data-name="Rectangle 5178" style="fill:none" d="M0 0h17.386v17.386H0z"/>
+    </g>
+</svg>

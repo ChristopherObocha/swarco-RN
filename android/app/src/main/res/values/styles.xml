@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!--  Handle status bar style in React Native side      -->
+    </style>
+
+    <!-- This theme is used directly on the SplashScreen.show(.. ) call in the MainActivity -->
+    <!-- This is also used as the Application style in manifest so that the white preview screen doesn't show   -->
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/primary_color</item>
+        <item name="android:windowDisablePreview">true</item>
+
+        <!--  This is only needed if we want to hide the status bar info    -->
+        <!--  <item name="android:windowFullscreen">true</item> -->
+    </style>
+
+</resources>

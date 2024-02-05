@@ -1,0 +1,142 @@
+diff --git a/node_modules/the-core-ui-module-tdforms-v2/src/input/DatePickerInput.js b/node_modules/the-core-ui-module-tdforms-v2/src/input/DatePickerInput.js
+index a7af055..0ce441d 100644
+--- a/node_modules/the-core-ui-module-tdforms-v2/src/input/DatePickerInput.js
++++ b/node_modules/the-core-ui-module-tdforms-v2/src/input/DatePickerInput.js
+@@ -3,6 +3,7 @@ import {TouchableOpacity, Keyboard} from 'react-native';
+ import {Input} from '@rneui/themed';
+ import {format, parse} from 'date-fns';
+ import DateTimePickerModal from 'react-native-modal-datetime-picker';
++import FontAwesome5ProIcon from 'react-native-vector-icons/FontAwesome5Pro';
+ 
+ import {withDefaultIconProps} from '../utils';
+ 
+@@ -80,13 +81,18 @@ const DatePickerInput = inputProps => {
+             ...commonProps?.iconStyle
+           }
+         }
+-        rightIcon={{
+-          name: 'calendar',
+-          onPress: () => setShow(true),
+-          ...withDefaultIconProps(),
+-          ...item?.rightIcon,
+-          ...commonProps?.iconStyle
+-        }}
++        rightIcon={
++          <FontAwesome5ProIcon
++            name={item?.rightIcon ?? 'calendar'}
++            {...withDefaultIconProps()}
++            solid={false}
++            onPress={() => setShow(true)}
++            {...(item?.rightIcon && {
++              ...item.rightIcon,
++              ...commonProps?.iconStyle
++            })}
++          />
++        }
+       />
+       {show && (
+         <DateTimePickerModal
+diff --git a/node_modules/the-core-ui-module-tdforms-v2/src/input/DropdownInput.js b/node_modules/the-core-ui-module-tdforms-v2/src/input/DropdownInput.js
+index 3188826..775622b 100644
+--- a/node_modules/the-core-ui-module-tdforms-v2/src/input/DropdownInput.js
++++ b/node_modules/the-core-ui-module-tdforms-v2/src/input/DropdownInput.js
+@@ -35,7 +35,7 @@ const DropdownInput = inputProps => {
+   };
+ 
+   return (
+-    <TouchableOpacity style={{flex: 1}} onPress={() => openPicker()}>
++    <TouchableOpacity style={{flex: 1}} onPress={() => openPicker()} disabled={commonProps?.disabled}>
+       <Input
+         {...commonProps}
+         pointerEvents="none"
+diff --git a/node_modules/the-core-ui-module-tdforms-v2/src/input/PasswordInput.js b/node_modules/the-core-ui-module-tdforms-v2/src/input/PasswordInput.js
+index 1cf607f..bcc84ec 100644
+--- a/node_modules/the-core-ui-module-tdforms-v2/src/input/PasswordInput.js
++++ b/node_modules/the-core-ui-module-tdforms-v2/src/input/PasswordInput.js
+@@ -1,10 +1,10 @@
+ import React, {useState} from 'react';
+ import {TouchableOpacity} from 'react-native';
+-import {Input, Icon} from '@rneui/themed';
++import {Input} from '@rneui/themed';
+ import {useScale} from 'the-core-ui-utils';
+ 
+ import {withDefaultIconProps} from '../utils';
+-
++import FontAwesome5ProIcon from 'react-native-vector-icons/FontAwesome5Pro';
+ const PasswordInput = inputProps => {
+   const {item, commonProps} = inputProps;
+ 
+@@ -25,8 +25,8 @@ const PasswordInput = inputProps => {
+       rightIcon={
+         <TouchableOpacity
+           onPress={() => setSecure(!isSecure)}
+-          style={{...item.rightIconContainerStyle, flex: 1}}>
+-          <Icon
++          style={{...item.rightIconContainerStyle, flex: 1, justifyContent: 'center'}}>
++          <FontAwesome5ProIcon
+             {...withDefaultIconProps()}
+             name={isSecure ? 'eye-slash' : 'eye'}
+             size={getFontSize(16)}
+@@ -34,7 +34,6 @@ const PasswordInput = inputProps => {
+               ...item.rightIcon,
+               ...commonProps?.iconStyle
+             })}
+-
+           />
+         </TouchableOpacity>
+       }
+diff --git a/node_modules/the-core-ui-module-tdforms-v2/src/input/PhoneInput.js b/node_modules/the-core-ui-module-tdforms-v2/src/input/PhoneInput.js
+index 556c969..0b0f663 100644
+--- a/node_modules/the-core-ui-module-tdforms-v2/src/input/PhoneInput.js
++++ b/node_modules/the-core-ui-module-tdforms-v2/src/input/PhoneInput.js
+@@ -22,7 +22,10 @@ const PhoneInput = inputProps => {
+     }
+   };
+ 
+-  const [prefix, setPrefix] = useState(item.data[0].value);
++  const defaultPrefix = item?.data.find(it => value?.includes(it.value))?.value || item.data[0].value;
++
++
++  const [prefix, setPrefix] = useState(defaultPrefix);
+ 
+   useEffect(() => { 
+     if (prefix && value) {
+@@ -40,12 +43,12 @@ const PhoneInput = inputProps => {
+           return;
+         }
+       });
++
+       return newVal;
+     },
+     storedValue: props => {
+       if (props.value === null) return;
+       let newVal = props.value;
+-
+       item.data.map(it => {
+         if (newVal?.includes(it.value)) {
+           newVal = newVal.replace(it.value, '');
+@@ -89,6 +92,7 @@ const PhoneInput = inputProps => {
+         onChange: setPrefix,
+         placeholder: {},
+         pickerProps: item,
++        value: prefix,
+       })}
+       
+     </Fragment>
+diff --git a/node_modules/the-core-ui-module-tdforms-v2/src/utils/index.js b/node_modules/the-core-ui-module-tdforms-v2/src/utils/index.js
+index e2fefc1..eda0518 100644
+--- a/node_modules/the-core-ui-module-tdforms-v2/src/utils/index.js
++++ b/node_modules/the-core-ui-module-tdforms-v2/src/utils/index.js
+@@ -19,11 +19,9 @@ const withDefaultIconProps = () => {
+   const {getFontSize, getWidth} = useScale();
+ 
+   return {
+-    flex: 1,
+-    justifyContent: 'center',
+     width: getWidth(30),
+     type: 'font-awesome-5',
+-    color: 'grey',
++    color: 'black',
+     solid: true,
+     size: getFontSize(16),
+   };

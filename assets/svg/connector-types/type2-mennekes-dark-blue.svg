@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g data-name="Group 17767">
+        <g data-name="Group 17260" transform="translate(-.216 -.217)">
+            <circle data-name="Ellipse 466" cx="20" cy="20" r="20" transform="translate(.216 .217)" style="fill:#005bac"/>
+        </g>
+        <g data-name="Group 17560">
+            <path data-name="Path 11638" d="M10.642 18.18A10.44 10.44 0 0 0 20.829 7.5 10.93 10.93 0 0 0 18.26.416L11.3.468h-.543L2.982.416A10.938 10.938 0 0 0 .415 7.5 10.44 10.44 0 0 0 10.6 18.18z" transform="translate(9.483 10.806)" style="stroke:#e5eef7;stroke-miterlimit:10;stroke-width:1.3px;fill:none"/>
+            <g data-name="Group 17564">
+                <path data-name="Path 11639" d="M3.77 9.4a2.358 2.358 0 0 1 2.3-2.3 2.358 2.358 0 0 1 2.3 2.3 2.358 2.358 0 0 1-2.3 2.3 2.258 2.258 0 0 1-2.3-2.3" transform="translate(11.273 14.372)" style="fill:#e5eef7;fill-rule:evenodd"/>
+                <path data-name="Path 11640" d="M9.77 7.1a2.358 2.358 0 0 0-2.3 2.3 2.358 2.358 0 0 0 2.3 2.3 2.358 2.358 0 0 0 2.3-2.3 2.358 2.358 0 0 0-2.3-2.3" transform="translate(13.247 14.372)" style="fill:#e5eef7;fill-rule:evenodd"/>
+                <path data-name="Path 11641" d="M1.77 6.2a2.358 2.358 0 0 1 2.3-2.3 2.358 2.358 0 0 1 2.3 2.3 2.358 2.358 0 0 1-2.3 2.3 2.358 2.358 0 0 1-2.3-2.3" transform="translate(10.207 12.664)" style="fill:#e5eef7;fill-rule:evenodd"/>
+                <path data-name="Path 11642" d="M7.87 3.9a2.358 2.358 0 0 0-2.3 2.3 2.358 2.358 0 0 0 2.3 2.3 2.358 2.358 0 0 0 2.3-2.3 2.358 2.358 0 0 0-2.3-2.3" transform="translate(12.234 12.664)" style="fill:#e5eef7;fill-rule:evenodd"/>
+                <path data-name="Path 11643" d="M9.37 6.2a2.3 2.3 0 1 1 4.6 0 2.3 2.3 0 1 1-4.6 0" transform="translate(14.261 12.664)" style="fill:#e5eef7;fill-rule:evenodd"/>
+                <path data-name="Path 11644" d="M5.7 1.5a1.533 1.533 0 1 0 1.537 1.533A1.444 1.444 0 0 0 5.7 1.5" transform="translate(11.487 11.384)" style="fill:#e5eef7;fill-rule:evenodd"/>
+                <path data-name="Path 11645" d="M7.97 3.033A1.533 1.533 0 1 1 9.5 4.567a1.444 1.444 0 0 1-1.53-1.534" transform="translate(13.514 11.384)" style="fill:#e5eef7;fill-rule:evenodd"/>
+            </g>
+            <path data-name="Rectangle 5179" transform="translate(9.262 10.583)" style="fill:none" d="M0 0h21.685v19.038H0z"/>
+        </g>
+    </g>
+</svg>

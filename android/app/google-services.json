@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1311440586",
+    "project_id": "new-swarco-econnect-app",
+    "storage_bucket": "new-swarco-econnect-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1311440586:android:a40493a7824748a0f9fe33",
+        "android_client_info": {
+          "package_name": "com.swarcoeconnect.swarcoeconnectapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1311440586-7ccq6rt6hrnjq9smmdrbp0ekrfkg2d62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArJre6gCOBhd1pKlABgYwCyXza7jwTz0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1311440586-7ccq6rt6hrnjq9smmdrbp0ekrfkg2d62.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1311440586-jo1h1h3u5mgpsjm6p8hhgtdsirfrvaci.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.swarcoeconnect.swarcoeconnectapp",
+                "app_store_id": "1484463123"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

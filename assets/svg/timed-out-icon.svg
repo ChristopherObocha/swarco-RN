@@ -1,0 +1,5 @@
+<svg data-name="Icon Graphic - Large" xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+    <circle data-name="Ellipse 499" cx="90" cy="90" r="90" style="fill:#e5eef7"/>
+    <circle data-name="Ellipse 507" cx="80" cy="80" r="80" transform="translate(10 10)" style="fill:#fff;opacity:.7"/>
+    <path data-name="Path 11774" d="M0 8.75a35 35 0 0 1-35-35 35 35 0 0 1 35-35 35 35 0 0 1 35 35 35 35 0 0 1-35 35zm-3.281-35a2.936 2.936 0 0 0 1.463 2.611l13.125 8.75a3.011 3.011 0 0 0 4.43-.793 3.166 3.166 0 0 0-.793-4.553L3.281-28v-16.844a3.3 3.3 0 0 0-3.4-3.281A3.354 3.354 0 0 0-3.4-44.844z" transform="translate(90 116)" style="fill:#005bac"/>
+</svg>
